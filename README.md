@@ -6,7 +6,7 @@
 
 | 待机 | 走路 |
 | :---: | :---: |
-| ![蓝色大肥鱼待机动画](docs/images/idle.gif) | ![蓝色大肥鱼走路动画](docs/images/walking.gif) |
+| ![蓝色大肥鱼待机动画](docs/images/idle.gif) | ![蓝色大肥鱼走路动画](docs/images/walking-right.gif) |
 
 ## 一条命令安装（macOS / Linux）
 
