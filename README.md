@@ -10,6 +10,14 @@
 curl -fsSL https://raw.githubusercontent.com/mengmengjiang1999/blue-whale-pet/main/install.sh -o /tmp/blue-whale-pet-install.sh && sh /tmp/blue-whale-pet-install.sh
 ```
 
+如果当前网络无法访问 `raw.githubusercontent.com`，使用备用入口（无需登录）：
+
+```sh
+curl -fsSL -H 'Accept: application/vnd.github.raw+json' 'https://api.github.com/repos/mengmengjiang1999/blue-whale-pet/contents/install.sh?ref=main' -o /tmp/blue-whale-pet-install.sh && sh /tmp/blue-whale-pet-install.sh
+```
+
+安装脚本下载 ZIP 时也会自动尝试 API 备用入口。GitHub API 存在访问频率限制。
+
 默认安装到 `~/.codex/pets/blue-whale/`；设置了 `CODEX_HOME` 时使用 `$CODEX_HOME/pets/blue-whale/`。已有同名桌宠会先备份，安装程序会打印备份位置。
 
 安装后在 Codex 的宠物设置中刷新，选择「蓝色大肥鱼」。若未出现，重启应用。需要支持自定义 v2 桌宠的版本；Linux 下的显示能力取决于使用的客户端。
