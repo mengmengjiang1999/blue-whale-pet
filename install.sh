@@ -15,7 +15,11 @@ else
   command -v unzip >/dev/null 2>&1 || { echo '需要 unzip。' >&2; exit 1; }
   curl --fail --location --retry 3 --connect-timeout 15 \
     https://raw.githubusercontent.com/mengmengjiang1999/blue-whale-pet/main/blue-whale-pet.zip \
-    --output "$temp_dir/pet.zip"
+    --output "$temp_dir/pet.zip" || \
+    curl --fail --location --retry 3 --connect-timeout 15 \
+      -H 'Accept: application/vnd.github.raw+json' \
+      https://api.github.com/repos/mengmengjiang1999/blue-whale-pet/contents/blue-whale-pet.zip?ref=main \
+      --output "$temp_dir/pet.zip"
   unzip -q "$temp_dir/pet.zip" -d "$temp_dir/package"
   source_dir=$temp_dir/package/blue-whale
 fi
