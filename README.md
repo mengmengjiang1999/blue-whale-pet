@@ -4,9 +4,9 @@
 
 ## 动画预览
 
-| 待机 | 挥手 |
+| 待机 | 走路 |
 | :---: | :---: |
-| ![蓝色大肥鱼待机动画](docs/images/idle.gif) | ![蓝色大肥鱼挥手动画](docs/images/waving.gif) |
+| ![蓝色大肥鱼待机动画](docs/images/idle.gif) | ![蓝色大肥鱼走路动画](docs/images/walking.gif) |
 
 ## 一条命令安装（macOS / Linux）
 
